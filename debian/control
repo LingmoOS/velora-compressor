@@ -1,7 +1,7 @@
-Source: deepin-compressor
+Source: velora-compressor
 Section: devel
 Priority: optional
-Maintainer: packages <packages@deepin.com>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  debhelper (>= 11),
  pkg-config,
@@ -26,7 +26,8 @@ Build-Depends:
  libzip-dev,
  libmount-dev,
  libminizip-dev,
-Standards-Version: 4.1.3
+Standards-Version: 4.5.0
+Homepage: https://github.com/LingmoOS
 
 Package: deepin-compressor
 Architecture: any

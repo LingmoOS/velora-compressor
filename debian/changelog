@@ -1,3 +1,9 @@
+velora-compressor (6.5.24.lingmo.1) unstable; urgency=medium
+
+  * new release for Lingmo OS.
+
+ -- Lingmo OS Team <team@lingmo.org>  Fri, 01 May 2026 21:14:00 +0800
+
 deepin-compressor (6.5.23) unstable; urgency=medium
 
   * fix: Enhance compression options and ARM CRC32 support
