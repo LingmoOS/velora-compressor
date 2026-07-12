@@ -18,9 +18,9 @@ class MainWindow;
 class ApplicationAdaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.deepin.Compressor")
+    Q_CLASSINFO("D-Bus Interface", "com.lingmo.Compressor")
     Q_CLASSINFO("D-Bus Introspection", ""
-                "  <interface name=\"com.deepin.Compressor\">\n"
+                "  <interface name=\"com.lingmo.Compressor\">\n"
 
                 "    <method name=\"showWindow\">\n"
                 "      <arg direction=\"out\" type=\"b\"/>\n"

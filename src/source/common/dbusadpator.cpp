@@ -79,9 +79,9 @@ void ApplicationAdaptor::onActiveWindow(qint64 pid)
         qDebug() << "Window not active, trying to activate via Dock DBus";
         qInfo() << "activateWindow by Dock dbus";
         QDBusInterface dockDbusInterfaceV20(
-                "com.deepin.dde.daemon.Dock", "/com/deepin/dde/daemon/Dock", "com.deepin.dde.daemon.Dock");
+                "com.lingmo.daemon.Dock", "/com/lingmo/daemon/Dock", "com.lingmo.daemon.Dock");
         QDBusInterface dockDbusInterfaceV23(
-                "org.deepin.dde.daemon.Dock1", "/org/deepin/dde/daemon/Dock1", "org.deepin.dde.daemon.Dock1");
+                "org.lingmo.daemon.Dock1", "/org/lingmo/daemon/Dock1", "org.lingmo.daemon.Dock1");
         QDBusInterface *dockDbusInterface = dockDbusInterfaceV23.isValid() ? &dockDbusInterfaceV23 : &dockDbusInterfaceV20;
         if (dockDbusInterface->isValid()) {
             QDBusReply<void> reply = dockDbusInterface->call("ActivateWindow", m_curShowWidget->winId());

@@ -137,7 +137,7 @@ install(DIRECTORY assets/deepin-compressor DESTINATION ${CMAKE_INSTALL_DATADIR}/
 #install(FILES conf/compressor-singlecompress.conf DESTINATION ${CMAKE_INSTALL_DATADIR}/deepin-compressor/compressedformat/)
 
 # Install DBus service file
-install(FILES ${CMAKE_CURRENT_LIST_DIR}/com.deepin.Compressor.service
+install(FILES ${CMAKE_CURRENT_LIST_DIR}/com.lingmo.Compressor.service
         DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services/)
 
 # Install DBus interface XML file

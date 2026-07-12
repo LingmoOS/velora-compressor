@@ -120,7 +120,7 @@ bool DFMStandardPaths::pathControl(const QString &sPath)
     qDebug() << "Documents path:" << docPath << "Pictures path:" << picPath;
     
     QDBusMessage reply;
-    QDBusInterface iface("com.deepin.FileArmor1", "/com/deepin/FileArmor1", "com.deepin.FileArmor1",QDBusConnection::systemBus());
+    QDBusInterface iface("com.lingmo.FileArmor1", "/com/lingmo/FileArmor1", "com.lingmo.FileArmor1",QDBusConnection::systemBus());
     
     if (iface.isValid()) {
         qDebug() << "DBus interface is valid";

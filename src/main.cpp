@@ -222,8 +222,8 @@ int main(int argc, char *argv[])
     
     if(!orderObject){
         qDebug() << "Registering standard DBus service";
-        if (dbus.registerService("com.deepin.Compressor")) {
-            dbus.registerObject("/com/deepin/Compressor", &w);
+        if (dbus.registerService("com.lingmo.Compressor")) {
+            dbus.registerObject("/com/lingmo/Compressor", &w);
             qDebug() << "DBus service registered successfully, moving window to center";
             Dtk::Widget::moveToCenter(&w);
         } else {
@@ -231,10 +231,10 @@ int main(int argc, char *argv[])
         }
     } else {
         qDebug() << "Registering WPS-specific DBus service";
-        QString serviceName = "com.deepin.Compressor"+QString::number(QGuiApplication::applicationPid());
+        QString serviceName = "com.lingmo.Compressor"+QString::number(QGuiApplication::applicationPid());
         if (dbus.registerService(serviceName)) {
             qDebug() << "WPS DBus service registered successfully";
-            QString objectPath = "/com/deepin/Compressor/"+QString::number(QGuiApplication::applicationPid());
+            QString objectPath = "/com/lingmo/Compressor/"+QString::number(QGuiApplication::applicationPid());
             dbus.registerObject(objectPath, &w);
             adaptor.setCompressFile(newfilelist.first());
             Dtk::Widget::moveToCenter(&w);

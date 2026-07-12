@@ -23,7 +23,7 @@ CompressorApplication::CompressorApplication(int &argc, char **argv)
     
     // Register DBus service
     QDBusConnection connection = QDBusConnection::sessionBus();
-    if (!connection.registerService("com.deepin.Compressor")) {
+    if (!connection.registerService("com.lingmo.Compressor")) {
         qWarning() << "Failed to register DBus service:" << connection.lastError().message();
     } else {
         qDebug() << "DBus service registered successfully";
